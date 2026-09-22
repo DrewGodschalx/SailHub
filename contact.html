@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact SailHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="biographies.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select id="fontSelect" class="control-select">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow" data-i18n="heroEyebrow">Get in Contact</p>
+          <h1 data-i18n="heroTitle">Contact</h1> 
+          <p class="hero-copy" data-i18n="heroCopy">All information reguarding contact for any reason and the format in which we want them is located below.</p>
+          <p class="hero-copy" data-i18n="heroCopy">Press the Compose Email button below to be automatically redirected to you default email service with our email adress already linked</p>
+          <a class="primary-btn" href="mailto:someone@example.com" data-i18n="heroButton">Compose Email</a>
+        </div>
+        <div class="hero-panel">
+          <ul>
+            <li data-i18n="heroItem1">Add a Resource</li>
+            <li data-i18n="heroItem2">Add to Gallery</li>
+            <li data-i18n="heroItem3">Correct a Biography</li>
+            <li data-i18n="heroItem4">Add to Biographies</li>
+            <li data-i18n="heroItem5">Write a Review</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <article class="info-card">
+          <h2 data-i18n="cardSearchTitle">Requesting top add to Gallery</h2>
+          <p data-i18n="cardSearchText"> Include the following:</p>
+<ul>
+        <li>Image</li>
+        <li>link to image if online-can be posted to a public Instagram account</li>
+        <li>Image title</li>
+        <li>Image description</li>
+        <li>Your full name</li>    
+</ul>
+          <p data-i18n="cardSearchText"> If information is not present then photo will not be uploaded.</p>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardAboutTitle">Adding information to Biographies</h2>
+          <p data-i18n="cardAboutText">Include the following:</p>
+          <ul>
+            <li>Name of boat or rigging, etc</li>
+            <li>Image</li>
+            <li>All relevent information as present in already defined biographies</li>
+            <li>Your full name</li>
+          </ul>
+                   <p data-i18n="cardSearchText"> If information is not present then photo will not be uploaded.</p>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardGalleryTitle">Correct a Biography</h2>
+          <p data-i18n="cardGalleryText">Include the following:</p>
+          <ul>
+            <li>Your full name</li>
+            <li>Reason for alteration</li>
+            <li>Direct quotes that need to be removed or changed</li>
+            <li>Evidence of fallacy</li>
+          </ul>
+                    <p data-i18n="cardSearchText"> If information is not present then photo will not be uploaded.</p>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardGalleryTitle">Write a Review</h2>
+          <p data-i18n="cardGalleryText">Include the folowing</p>
+          <ul>
+            <li>Your full name</li>
+            <li>Rating out of 5</li>
+            <li>Reason for rating- Max 100 words</li>
+            <li>Relevent photos if necercary</li>
+          </ul>
+                    <p data-i18n="cardSearchText"> If information is not present then photo will not be uploaded.</p>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardGalleryTitle">Add a Resource</h2>
+          <p data-i18n="cardGalleryText">Include the following</p>
+          <ul>
+            <li>Image</li>
+            <li>Link to resource</li>
+            <li>Name</li>
+            <li>Description</li>
+          </ul>
+                    <p data-i18n="cardSearchText"> If information is not present then photo will not be uploaded.</p>
+        </article>
+      </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+
+    <footer class="footer">
+      <p data-i18n="footerText">SailHub - A Drew Godschalx Industries Creation</p>
+    </footer>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

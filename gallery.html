@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SailHub Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="biographies.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select id="fontSelect" class="control-select">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="card-grid gallery-grid">
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/652837377_17866724838598327_2539381376733227414_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=Mzg1Mzk4NjQ3NzU1MDc1ODAzNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=B4aJDdxfu00Q7kNvwG2Gy-J&_nc_oc=Adp0jK1H4rihetb1JlK5_fvfUP45R6OW16YMagAeIi9DMj6khpj_3f2ZFIxPnyBv0OI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=DHccUHePZHrpQm0OURgVHQ&_nc_ss=7a22e&oh=00_AQJ2957G2FWYyLUQttTY74kO6cyGBt4ZZZT8olad7rD6dQ&oe=6AA44E64" alt="NS14 NSW States 2026">     
+          <h2 data-i18n="galleryTitle1">NS14 NSW States 2026</h2>
+          <p data-i18n="galleryText1">NS14 NSW States at South Lake Macquarie Amateur Sailing Club.</p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/641762771_17863006500598327_4196587493237107809_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzgzODcyNDE0NjIzNTM0MDI0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyNS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Tts8cHmVBwsQ7kNvwFKRRwj&_nc_oc=AdoMBgNF7G1s3OWqavwkrSE-cECWhyelugrrtAUAvJeMhWCFb-WFMnxiKvAuDCG11hQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=shq-4-PKlXCER2jADasVbQ&_nc_ss=7a22e&oh=00_AQIFJ6uQrBsRtprkMml2zc5XMDmx9w-glzPw0godP4d6MA&oe=6AA460B8" alt="RS Quest Youth Nationals 2026">     
+          <h2 data-i18n="galleryTitle2">The Lonley Sailors</h2>
+          <p data-i18n="galleryText2">RS Quest Youth Nationals in Melbourne.</p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/641190542_17863006524598327_1742296389125471526_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzgzODcyNDE0NjU0NTcxNzY4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyNS5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=j4MipQHf9bQQ7kNvwE_W_Rr&_nc_oc=AdqTxt6HO-S9V75ofj-0F9DIHXAs8B3QkCA96SJpaKG3Vt3OZqIbkT83jRbsiSMRyYc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=shq-4-PKlXCER2jADasVbQ&_nc_ss=7a22e&oh=00_AQJXh2pCjvmDzoOtEJR7XlrQdxf0ST8lSFwXmblvO8fqHw&oe=6AA4649F" alt="RS Quest Youth Nationals 2026">     
+          <h2 data-i18n="galleryTitle3">RS Quest Youth Nationals 2026</h2>
+          <p data-i18n="galleryText3">RS Quest Youth Nationals in Melbourne.</p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/653544903_17866724898598327_3333280326337830877_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=104&ig_cache_key=Mzg1Mzk4NjQ4OTQxMjIyMzA5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5oZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=iKr0h0oNLfkQ7kNvwHwPv8Q&_nc_oc=AdrfYM6gCe3VLY_sR1mzTqv79WiG3uFbrIkjgq5lFUE04DW1itkw1k16bYTCYcNPvjU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&se=-1&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=A3hIwDuppqhWaN9WfQdkew&_nc_ss=7a22e&oh=00_AQL_EK8LTew46jyW9nKBOzBF5HWKyN62pB3jGKGtY5qjGQ&oe=6AA47ED7" alt="Sailors Breifing NSW NS14 States 2026">     
+          <h2 data-i18n="galleryTitle4">Sailors Briefing</h2>
+          <p data-i18n="galleryText4">South Lake Macquarie Amateur Sailing Club Sailors Briefing.</p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/582448997_17849038974598327_3986593217945536097_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=Mzc2ODQ4MjIwMjc4ODE4NzMzNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuOTYzLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=e253ywf5AEIQ7kNvwFrgDQX&_nc_oc=AdpQyIFb3WLSV9mAqJYZUXXES8Qt5qZImfzRzmRcF4sXOoDzczlu564b-Y3vEZVqsbE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=fZ5liSiQcYj-pE0Rg43HLQ&_nc_ss=7a22e&oh=00_AQL575xIHmY4FZCMYXkhwYyjyPVJu5qAA54SMZR6kr5IZQ&oe=6AA45732" alt="Pointscore Race MG's">     
+          <h2 data-i18n="galleryTitle5">Water Rivals</h2>
+          <p data-i18n="galleryText5">Two MG's at a pointscore race go head-to-head.</p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="https://instagram.fcbr2-1.fna.fbcdn.net/v/t51.82787-15/583135608_17849038866598327_3139291312395070722_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc2ODQ4MjIwMzA1NjYwOTQwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuOTY2LnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=LQOdgRIwCMAQ7kNvwFwkS5J&_nc_oc=AdpHIS1cKGp1ZGQExa7RXieXbUPzGHD-Y-O_a1DaosUNEirYuULmuMasT6euSz36VTo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcbr2-1.fna&_nc_gid=fZ5liSiQcYj-pE0Rg43HLQ&_nc_ss=7a22e&oh=00_AQK3d4V-WJuNnxCHPqKK1SL4iCuJuMPuaFM9yx6Dj6WKLg&oe=6AA47A3A" alt="Spinaker's Seen at a Pointscore Race">     
+          <h2 data-i18n="galleryTitle6">Spinnaker Heaven</h2>
+          <p data-i18n="galleryText6">Lake Burly Griffin filled with spinnakers going downwind.</p>
+        </article>
+        <!--<article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle7"></h2>
+          <p data-i18n="galleryText7"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle8"></h2>
+          <p data-i18n="galleryText8"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle9"></h2>
+          <p data-i18n="galleryText9"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle10"></h2>
+          <p data-i18n="galleryText10"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle11"></h2>
+          <p data-i18n="galleryText11"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle12"></h2>
+          <p data-i18n="galleryText12"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle12"></h2>
+          <p data-i18n="galleryText12"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle12"></h2>
+          <p data-i18n="galleryText12"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle12"></h2>
+          <p data-i18n="galleryText12"></p>
+        </article>
+        <article class="gallery-card">
+          <img class="gallery-art" src="" alt="">     
+          <h2 data-i18n="galleryTitle12"></h2>
+          <p data-i18n="galleryText12"></p>
+        </article> -->
+      </section>
+      <nav class="pagination-container" aria-label="Gallery Pagination">
+        <button id="prevBtn" class="page-btn" aria-label="Previous Page">&laquo;</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <button id="nextBtn" class="page-btn" aria-label="Next Page">&raquo;</button>
+      </nav>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

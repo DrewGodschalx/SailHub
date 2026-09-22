@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SailHub | Sailor's Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="biographies.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+ 
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select id="fontSelect" class="control-select">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow" data-i18n="heroEyebrow">Modern sailing resources</p>
+          <h1 data-i18n="heroTitle">Navigate the sea with confidence.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">Discover route inspiration, learning tools, and daily guidance for every sailor from first-time captains to seasoned mariners.</p>
+          <a class="primary-btn" href="resources.html" data-i18n="heroButton">Explore Resources</a>
+        </div>
+        <div class="hero-panel">
+          <ul>
+            <li data-i18n="heroItem1">Find Boat information</li>
+            <li data-i18n="heroItem2">Explore an extensive Gallery</li>
+            <li data-i18n="heroItem3">Find a great read</li>
+            <li data-i18n="heroItem4">Learn about or mission</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <article class="info-card">
+          <h2 data-i18n="cardSearchTitle">Search the Index</h2>
+          <p data-i18n="cardSearchText">Browse our database of sailing information.</p>
+          <a href="biographies.html" data-i18n="cardSearchLink">Open search</a>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardAboutTitle">About the Project</h2>
+          <p data-i18n="cardAboutText">Learn how SailHub was created and view version updates.</p>
+          <a href="about.html" data-i18n="cardAboutLink">Meet the mission</a>
+        </article>
+        <article class="info-card">
+          <h2 data-i18n="cardGalleryTitle">Gallery</h2>
+          <p data-i18n="cardGalleryText">Enjoy a modern collection of sea views, sailing scenes, and marina moments.</p>
+          <a href="gallery.html" data-i18n="cardGalleryLink">See the gallery</a>
+        </article>
+      </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+
+    <footer class="footer">
+      <p data-i18n="footerText">SailHub - A Drew Godschalx Industries Creation</p>
+    </footer>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

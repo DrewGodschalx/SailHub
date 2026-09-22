@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search SailHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="search.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select  id="fontSelect" class="control-select">                                    <img class="font-selection" title="Select Font" src="images/brand_family_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Font's">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page single-column">
+      <section class="detail-card search-panel">
+        <h1 data-i18n="searchTitle">Search</h1>
+        <div class="search-container">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+          </svg>
+          <input id="searchInput" type="text" placeholder="Search for boats, rigging, etc." data-i18n-placeholder="searchPlaceholder" />
+        </div>
+        <p id="searchStatus" class="search-status">Showing popular craft and gear to get you started.</p>
+        <div id="resultsGrid" class="results-grid"></div>
+
+        <section class="boat-detail" id="result-NS14" data-name="NS14" hidden>
+          <div class="detail-header">
+            <h3>NS14</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://imgs.yachthub.com/3/2/8/3/6/7/0_4.jpg" alt="NS14" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The NS14 is an Australian restricted development class of sailing dinghy, designed in 1960 and known for its lively performance, family-friendly handling, and strong development culture. It is a fast two-person boat that can be tuned and refined within class rules.</p>
+
+          <h4>Boat figures</h4>
+          <table class="detail-table">
+            <tbody>
+              <tr><th>Length overall</th><td>4.27 m</td></tr>
+              <tr><th>Beam</th><td>1.6–1.8 m</td></tr>
+              <tr><th>Hull weight</th><td>64 kg</td></tr>
+              <tr><th>Draft</th><td>Approx. 1.09 m with centreboard down</td></tr>
+              <tr><th>Sail area</th><td>9.3 m² upwind</td></tr>
+              <tr><th>Jib/genoa area</th><td>2.3 m²</td></tr>
+              <tr><th>Mainsail area</th><td>6.9–7.0 m²</td></tr>
+              <tr><th>Crew</th><td>2</td></tr>
+              <tr><th>Notes</th><td>Restricted development class; no trapeze or spinnaker</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">The class was developed in Sydney, Australia, and introduced at the Northbridge Sailing Club before spreading to other states and eventually New Zealand and the United States. Its design evolved over time through a strong development tradition, including early wing masts and increasingly refined hull shapes.</p>
+
+          <h4>Key features</h4>
+          <ul class="detail-list">
+            <li>Designed around a two-person crew and built to be competitive without a trapeze or spinnaker.</li>
+            <li>Offers a good balance of performance and accessibility for novice and family crews.</li>
+            <li>Allows significant development within class rules, including innovative rig and hull improvements.</li>
+            <li>Known for efficient rigs, self-draining cockpits, and a strong emphasis on fast, modern sailing.</li>
+          </ul>
+        </section>
+
+        <section class="boat-detail" id="result-MG14" data-name="MG14" hidden>
+          <div class="detail-header">
+            <h3>MG14</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://static.wixstatic.com/media/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg/v1/fill/w_480,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0ff8c6_a4c00201f49549c09812d438bcc6b6ff~mv2.jpg" alt="MG14" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The MG14 is a two-person, high-performance skiff-style dinghy developed in Australia. It combines a restricted-development hull with a single trapeze and asymmetric spinnaker, making it fast, tactical, and rewarding for skilled crews.</p>
+
+          <h4>Boat figures</h4>
+          <table class="detail-table">
+            <tbody>
+              <tr><th>Length overall</th><td>4.25–4.30 m</td></tr>
+              <tr><th>Beam</th><td>1.60–1.83 m</td></tr>
+              <tr><th>Hull weight</th><td>64 kg</td></tr>
+              <tr><th>Draft</th><td>Approx. 1.09 m with centreboard down</td></tr>
+              <tr><th>Sail area</th><td>9.3 m² working sail area</td></tr>
+              <tr><th>Spinnaker</th><td>Asymmetric spinnaker, approx. 14 m perimeter</td></tr>
+              <tr><th>Crew</th><td>2</td></tr>
+              <tr><th>Notes</th><td>Single trapeze; high-performance development class</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">Originally developed in 1963 at Manly Sailing Club in Sydney as the Manly Graduate 14ft, the MG14 was created as a stepping-stone between smaller junior boats and larger skiffs. It evolved from a double-luff spinnaker setup to the modern asymmetric spinnaker design and remains a popular class in several Australian states.</p>
+
+          <h4>Key features</h4>
+          <ul class="detail-list">
+            <li>Designed as a high-performance two-person boat with a single trapeze and lively downwind speed.</li>
+            <li>Uses a restricted-development hull and sail rule set, helping older boats remain competitive while still allowing refinement.</li>
+            <li>Offers a strong mix of technique, strategy, and pace rather than relying purely on brute force.</li>
+            <li>Related closely to the NS14, but with the added performance of trapeze and spinnaker sailing.</li>
+          </ul>
+        </section>
+
+        <section class="boat-detail" id="result-RS-Quest" data-name="RS Quest" hidden>
+          <div class="detail-header">
+            <h3>RS Quest</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://images.squarespace-cdn.com/content/v1/62207344582c7d0bad231380/631d59c7-16ad-4bcd-99f6-44fe94b139e0/Quest-diagram-Rot-627x812.jpg" alt="RS Quest" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The RS Quest is a British trainer and day-sailing dinghy designed by Jo Richards for clubs, schools, and families. It is intended to be robust, easy to handle, and practical for both teaching and casual sailing.</p>
+
+          <h4>Boat figures</h4>
+          <table class="detail-table">
+            <tbody>
+              <tr><th>Length overall</th><td>4.29 m</td></tr>
+              <tr><th>Beam</th><td>1.83 m</td></tr>
+              <tr><th>Hull weight</th><td>140 kg</td></tr>
+              <tr><th>Draft</th><td>Approx. 1.09 m with centreboard down</td></tr>
+              <tr><th>Sail area</th><td>119 sq ft upwind</td></tr>
+              <tr><th>Spinnaker</th><td>Optional asymmetrical or symmetrical spinnaker</td></tr>
+              <tr><th>Crew</th><td>2+</td></tr>
+              <tr><th>Notes</th><td>Rotomoulded polyethylene hull; trainer/day-sailer</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">Built by RS Sailing and introduced in 2015, the RS Quest was developed to replace older training boats and provide a modern, durable platform for youth and family sailing. It has since been used in club programmes and casual recreational sailing.</p>
+
+          <h4>Key features</h4>
+          <ul class="detail-list">
+            <li>Designed as a safe and approachable sail trainer for groups, beginners, and families.</li>
+            <li>Uses a durable rotomoulded polyethylene hull that is suitable for regular club use and easy transport.</li>
+            <li>Includes a centreboard and transom-mounted rudder, with optional accessories such as a spinnaker, outboard motor mount, and trailer setup.</li>
+            <li>Its simple layout makes it practical for teaching sailing fundamentals while still being enjoyable for recreational use.</li>
+          </ul>
+        </section>
+
+        <section class="boat-detail" id="result-Laser" data-name="Laser" hidden>
+          <div class="detail-header">
+            <h3>Laser</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2f92wiLkxIKiSmz0y4vT9Ph7iF0FMSDwV0oc3dJXvngKlZHOMat1Om6D5tF87twgckNAvCpYdWC1P1-27PvFviOeVc2OITcvGtylvQ&s=10" alt="Laser" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The Laser is a single-handed, one-design dinghy designed in 1970 by Ian Bruce and Bruce Kirby, with Hans Fogh creating the sail. It is known for its simple rig, durable fiberglass construction, and outstanding racing performance.</p>
+
+          <h4>Boat figures</h4>
+          <table class="detail-table">
+            <tbody>
+              <tr><th>Length overall</th><td>4.23 m</td></tr>
+              <tr><th>Beam</th><td>1.37 m</td></tr>
+              <tr><th>Hull weight</th><td>59 kg</td></tr>
+              <tr><th>Draft</th><td>Approx. 0.79 m</td></tr>
+              <tr><th>Sail area</th><td>7.06 m² (Standard)</td></tr>
+              <tr><th>Rig options</th><td>Standard, Radial, 4.7</td></tr>
+              <tr><th>Crew</th><td>1</td></tr>
+              <tr><th>Notes</th><td>One-design class with interchangeable rigs</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">The Laser emerged from a desire for an affordable, easy-to-transport racing dinghy. After early development and testing, it was introduced in the early 1970s and quickly became one of the world’s most widely sailed one-design classes. It has since become a staple of club racing, coaching, and Olympic sailing.</p>
+
+          <h4>Key features</h4>
+          <ul class="detail-list">
+            <li>Built as a lightweight, car-top-friendly boat that is easy to launch, store, and transport.</li>
+            <li>Uses a common hull with interchangeable rigs: Standard (7.06 m²), Radial (5.76 m²), and 4.7 (4.7 m²).</li>
+            <li>Designed for one sailor, with simple handling and strong performance in a wide range of conditions.</li>
+            <li>Widely raced worldwide and has been an Olympic class since 1996, with Laser Radial used in women’s Olympic sailing.</li>
+          </ul>
+        </section>
+         <section class="boat-detail" id="result-Rolling-Tack" data-name="Rolling Tack" hidden>
+          <div class="detail-header">
+            <h3>Rolling Tack</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW60QJEaCuN7A43K-6DhUTJi3xYZMQnGWqQnvahCF6zA&s=10" alt="Rolling Tack" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The Rolling Tack is a sailing technique used to change the boat's direction by rolling the boat on its side, allowing it to sail closer to the wind.</p>
+
+          <h4>How to Perform</h4>
+          <ol>
+            <li>Move weight to leeward side</li>
+            <li>Push tiller same direction</li>
+            <li>Move weight to windward side</li>
+            <li>The boat tacks</li>
+            <li>Stay stilling on the old windward side until your butt goes in water</li>
+            <li>Ball move in unison to windward, flattening boat</li>
+            <li>Sheet in</li>
+          </ol>
+        
+          <h4>Brief history</h4>
+          <p class="detail-summary">The Rolling Tack technique has been used in sailing for many years, allowing sailors to navigate more effectively in various wind conditions.</p>
+        </section>
+        <section class="boat-detail" id="result-Rolling-Gybe" data-name="Rolling Gybe" hidden>
+          <div class="detail-header">
+            <h3>Rolling Gybe</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTnm_0q3Kml6Va94D_0N9Kyj6zipmZMR0KLf0kWwLtMQ&s=10" alt="Rolling Gybe" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The Rolling Gybe is a sailing technique used to change the boat's direction while sailing downwind, allowing for a smoother and more efficient gybe maneuver.</p>
+
+          <h4>How to Perform</h4>
+          <ol>
+            <li>Roll boat windward and bare away slightly</li>
+            <li>Pull and flick the main across as you change sides</li>
+            <li>Flatten the boat</li>
+            <li>Correct the steering</li>
+          </ol>
+        
+          <h4>Brief history</h4>
+          <p class="detail-summary">The Rolling Gybe technique has been developed and refined over the years by sailors seeking to improve their downwind performance and maintain control during gybes.</p>
+        </section>
+        <section class="boat-detail" id="result-Backwards-Sailing" data-name="Backwards Sailing" hidden>
+          <div class="detail-header">
+            <h3>Backwards Sailing</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76ijdyaKn_694odqsWyShUuS7rnvlHecZZjhGxVz_2A&s=10" alt="Backwards Sailing" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The Backwards Sailing technique is used to navigate a boat in reverse, typically in situations where traditional sailing methods are not feasible.</p>
+
+          <h4>How to Perform</h4>
+    
+<h5>Entering</h5>
+<ol>
+  <li>Sail into wind, until boat slows</li>
+  <li>Push boom windward</li>
+  <li>Steering is reversed</li>
+</ol>
+<h5>Exiting</h5>
+<ol>
+  <li>Push tiller towards boom</li>
+  <li>Pull tiller to stop spinning</li>
+  <li>Pull main sheet and sail forwards</li>
+</ol>
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">The Backwards Sailing technique has been utilized by sailors for many years, particularly in tight spaces or when maneuvering in harbors where forward sailing is not possible.</p>
+        </section>
+       <section class="boat-detail" id="result-Vang-Cunningham-Outhaul" data-name="Vang, Cunningham, Outhaul" hidden>
+          <div class="detail-header">
+            <h3>Vang, Cunningham, Outhaul</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn00i_UoBmzWfqmnkYeCZEoSFKrEXEjEh8K-YW3244Dw&s=10" alt="Vang, Cunningham, Outhaul" />
+
+          <h4>Overview</h4>
+          <p class="detail-summary">The Vang, Cunningham, and Outhaul systems are essential for controlling sail shape and performance in various wind conditions.</p>
+<h4>Vang</h4>
+The vang pulls boom down, controls leech tension (back edge) and shape at middle of sail. The general rule is more vang is more curve, as wind increases. 
+
+
+<h4>Cunningham</h4>
+The cunningham (Downhaul) pulls the tack of sail down, moves depth of sail forwards, and flattens the top of the sail.
+
+
+<h4>Outhaul</h4>
+The Outhaul pulls the clew of the sail out, flattens the bottom of the sail, and reduces the power of the sail.
+
+          <h4>Setting in Different Wind Conditions</h4>
+     <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+    <thead>
+      <tr style="background-color: #f2f2f2; text-align: left;">
+        <th>Wind strength</th>
+        <th>Cunningham</th>
+        <th>Vang</th>
+        <th>Outhaul</th>
+        <th>Shape</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Very light</td>
+        <td>Light</td>
+        <td>Light</td>
+        <td>Medium</td>
+        <td>curved</td>
+      </tr>
+      <tr>
+        <td>Light</td>
+        <td>Light</td>
+        <td>Very light</td>
+        <td>Light</td>
+        <td>Very curved</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>Medium</td>
+        <td>Light</td>
+        <td>Medium</td>
+        <td>Flat</td>
+      </tr>
+      <tr>
+        <td>Strong</td>
+        <td>Hard</td>
+        <td>Hard</td>
+        <td>Hard</td>
+        <td>Very flat</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">The Vang, Cunningham, and Outhaul systems have been developed over time to provide sailors with precise control over sail shape, allowing for optimal performance in a variety of sailing conditions.</p>
+        </section>
+         <section class="boat-detail" id="result-Navigational-Marks" data-name="Navigational Marks" hidden>
+          <div class="detail-header">
+            <h3>Navigational Marks</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+            <button class="back-button" type="button">Back to results</button>
+          </div>
+          <img class="detail-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDF4FK7MWei4V2PR-_-7iTTz-QLxyiOzfuhTmVCLYHA&s=10" alt="Navigational Marks" />
+
+          <h4>Overview</h4>
+<p class="detail-summary">Navigational marks are essential tools for safe maritime navigation, helping sailors identify hazards, channel boundaries, and important features on the water.</p>
+         <h4>Lateral Marks</h4>
+         <p>Lateral marks identify the edges of a channel and show which side of the channel should be followed.</p>
+         <ul class="detail-list">
+           <li>Port marks are red, can-shaped buoys with red lights.</li>
+           <li>Starboard marks are green, cone-shaped buoys with green lights.</li>
+           <li>When travelling upstream, keep green marks on your starboard side and red marks on your port side. When returning from sea, the direction is reversed.</li>
+         </ul>
+
+         <h4>Cardinal Marks</h4>
+         <p>Cardinal marks identify the safe side of a hazard. Their black and yellow patterns indicate whether the safe water lies to the north, east, south, or west of the mark.</p>
+         <p>The lights flash in patterns based on the position of a clock face: continuously for north, three flashes for east, six flashes for south, and nine flashes for west. The south cardinal mark uses six flashes followed by a long flash.</p>
+
+         <h4>Special Marks</h4>
+         <p>Special marks identify specific areas or features, such as underwater pipes, moorings, swimming areas, or points of interest. They are yellow, have a yellow X-shaped topmark, and display a yellow light in any rhythm. They may also be used as lateral marks when their shape indicates a channel boundary.</p>
+
+         <h4>Isolated Danger Marks</h4>
+         <p>Isolated danger marks identify a specific hazard surrounded by generally safe water, such as a wreck, rock, or underwater intake. They have two black spherical topmarks and are black with a red band in the middle.</p>
+        
+
+
+          <h4>Brief history</h4>
+          <p class="detail-summary">Navigational marks have been used for centuries to aid sailors in safely navigating waterways. Their designs and color schemes have evolved over time to provide clear and standardized guidance for mariners worldwide.</p>
+        </section>
+        <section class="boat-detail" id="result-Pacer" data-name="Pacer" hidden>
+  <div class="detail-header">
+    <h3>Pacer</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+    <button class="back-button" type="button">Back to results</button>
+  </div>
+  <img class="detail-image" src="https://binksmarine.com.au/cdn/shop/collections/r0_0_1943_1972_w1200_h678_fmax_1200x1218.jpg?v=1634787249" alt="Pacer" />
+
+  <h4>Overview</h4>
+  <p class="detail-summary">The Pacer is a 3.8 m one-design, two-person sailing dinghy originally designed by Jack Holt. It is widely used in Australia for training, school and university sailing, family sailing, and competitive racing. Its relatively light hull, wide beam, moderate sail area, and optional spinnaker give it a useful balance of stability and performance.</p>
+
+  <h4>Boat figures</h4>
+  <table class="detail-table">
+    <tbody>
+      <tr><th>Length overall</th><td>3.8 m</td></tr>
+      <tr><th>Beam</th><td>1.5 m</td></tr>
+      <tr><th>Minimum hull weight</th><td>59 kg</td></tr>
+      <tr><th>Mast height</th><td>5.6 m</td></tr>
+      <tr><th>Mainsail area</th><td>6.0 m²</td></tr>
+      <tr><th>Jib area</th><td>1.9 m²</td></tr>
+      <tr><th>Spinnaker area</th><td>7.4 m²</td></tr>
+      <tr><th>Crew</th><td>2</td></tr>
+      <tr><th>Notes</th><td>One-design sloop; commonly used for training and racing</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Brief history</h4>
+  <p class="detail-summary">The Pacer was designed by British dinghy designer Jack Holt and was originally commissioned as a family sailing dinghy. The design became established internationally and has developed a particularly strong presence in Australia, where Pacer fleets are used by sailing clubs, schools, universities, and racing associations.</p>
+
+  <h4>Key features</h4>
+  <ul class="detail-list">
+    <li>Designed for two sailors with a relatively stable and forgiving hull.</li>
+    <li>Light enough for two people to move and transport.</li>
+    <li>Uses a mainsail and jib with an optional asymmetric-style spinnaker.</li>
+    <li>Suitable for beginners while still providing useful performance for racing.</li>
+    <li>Popular as a training and team-racing boat in Australian sailing programs.</li>
+  </ul>
+</section>
+
+<section class="boat-detail" id="result-Corsair" data-name="Corsair" hidden>
+  <div class="detail-header">
+    <h3>Corsair</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+    <button class="back-button" type="button">Back to results</button>
+  </div>
+  <img class="detail-image" src="https://navalassoc.org.au/sites/default/files/pictures/Gerald%201.png" alt="Corsair" />
+
+  <h4>Overview</h4>
+  <p class="detail-summary">The Corsair is an Australian 16-foot, three-person sailing dinghy designed by Alan Payne. Originally developed as a robust training and recreational boat, it is known for its substantial fibreglass construction, stability, and relatively forgiving handling. The class has been particularly associated with Australian sailing and naval cadet training.</p>
+
+  <h4>Boat figures</h4>
+  <table class="detail-table">
+    <tbody>
+      <tr><th>Length overall</th><td>Approx. 4.88 m (16 ft)</td></tr>
+      <tr><th>Beam</th><td>Approx. 1.80 m</td></tr>
+      <tr><th>Hull weight</th><td>Approx. 136 kg minimum</td></tr>
+      <tr><th>Construction</th><td>Fibreglass</td></tr>
+      <tr><th>Sail area</th><td>Approx. 11.8 m² working sail area</td></tr>
+      <tr><th>Crew</th><td>3</td></tr>
+      <tr><th>Designer</th><td>Alan Payne</td></tr>
+      <tr><th>Notes</th><td>Heavy, stable training and racing dinghy</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Brief history</h4>
+  <p class="detail-summary">The Corsair was designed by Australian yacht designer Alan Payne and was originally built in Sydney from the late 1960s. Fibreglass construction and a comparatively heavy hull gave the boat considerable strength and stability. The design became particularly useful for sail training, including Australian naval cadet programs, while also supporting class racing.</p>
+
+  <h4>Key features</h4>
+  <ul class="detail-list">
+    <li>Large 16-foot hull designed for a three-person crew.</li>
+    <li>Heavy fibreglass construction makes the boat robust and stable.</li>
+    <li>Does not rely on trapezes or other high-performance hiking systems.</li>
+    <li>Well suited to training because of its predictable and forgiving handling.</li>
+    <li>Can accommodate additional sailors during training or recreational use.</li>
+  </ul>
+</section>
+
+<section class="boat-detail" id="result-29er" data-name="29er" hidden>
+  <div class="detail-header">
+    <h3>29er</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+    <button class="back-button" type="button">Back to results</button>
+  </div>
+  <img class="detail-image" src="https://www.mhyc.com.au/images/Sailing/2018-2019/Centreboard/2018_09_30_NSW_Youth_Champs_GeoffCropley_0361.jpg" alt="29er" />
+
+  <h4>Overview</h4>
+  <p class="detail-summary">The 29er is a high-performance two-person skiff designed for fast racing and youth development. It uses a single trapeze, self-tacking jib, and large asymmetric spinnaker to generate high speeds and powerful acceleration. The boat is sailed internationally and is one of the major development classes for sailors progressing toward larger high-performance skiffs.</p>
+
+  <h4>Boat figures</h4>
+  <table class="detail-table">
+    <tbody>
+      <tr><th>Length overall</th><td>4.45 m</td></tr>
+      <tr><th>Beam</th><td>1.77 m</td></tr>
+      <tr><th>Hull weight</th><td>74 kg</td></tr>
+      <tr><th>Mast length</th><td>6.25 m</td></tr>
+      <tr><th>Upwind sail area</th><td>12.5 m²</td></tr>
+      <tr><th>Spinnaker area</th><td>15.0 m²</td></tr>
+      <tr><th>Crew</th><td>2</td></tr>
+      <tr><th>Trapeze</th><td>Single trapeze</td></tr>
+      <tr><th>Notes</th><td>One-design high-performance skiff with asymmetric spinnaker</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Brief history</h4>
+  <p class="detail-summary">The 29er was developed as a modern two-person skiff that could provide high-performance sailing in a relatively compact package. It has become an important youth and pathway class internationally, giving sailors experience with trapezing, asymmetric spinnakers, high boat speeds, and technically demanding sail handling.</p>
+
+  <h4>Key features</h4>
+  <ul class="detail-list">
+    <li>High-performance skiff designed specifically for two sailors.</li>
+    <li>Uses a single trapeze to allow the crew to balance the powerful rig.</li>
+    <li>Self-tacking jib simplifies tacking while the asymmetric spinnaker provides substantial downwind power.</li>
+    <li>Light hull and tall rig produce rapid acceleration and planing performance.</li>
+    <li>Widely used as a youth development and international racing class.</li>
+  </ul>
+</section>
+
+<section class="boat-detail" id="result-Sharpie" data-name="Sharpie" hidden>
+  <div class="detail-header">
+    <h3>Australian Sharpie</h3><p class="CreatedBy"><img class="CreatedByLogo" src="images/SailHub Logo.svg" alt="" /> Created By SailHub</p>
+    <button class="back-button" type="button">Back to results</button>
+  </div>
+  <img class="detail-image" src="https://binksmarine.com.au/cdn/shop/collections/img_8133a_cmyk_1200x900.jpg?v=1634788618" alt="Sharpie" />
+
+  <h4>Overview</h4>
+  <p class="detail-summary">The Australian Sharpie is a fast three-person planing dinghy that evolved from the 12-square-metre Sharpie class used at the 1956 Melbourne Olympic Games. The modern Australian Lightweight Sharpie became established during the 1960s and has retained its distinctive hull shape while developing a powerful modern rig. It is renowned for close racing, high speeds, and demanding crew work.</p>
+
+  <h4>Boat figures</h4>
+  <table class="detail-table">
+    <tbody>
+      <tr><th>Length overall</th><td>Approx. 6.1 m (20 ft)</td></tr>
+      <tr><th>Beam</th><td>Approx. 1.42 m</td></tr>
+      <tr><th>Minimum hull weight</th><td>90 kg</td></tr>
+      <tr><th>Working sail plan</th><td>Mainsail and jib</td></tr>
+      <tr><th>Spinnaker</th><td>Yes</td></tr>
+      <tr><th>Crew</th><td>3</td></tr>
+      <tr><th>Trapeze</th><td>Up to one trapeze on each side of the mast</td></tr>
+      <tr><th>Notes</th><td>Lightweight Australian development of the 12 m² Sharpie; planing hull</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Brief history</h4>
+  <p class="detail-summary">The Australian Sharpie evolved from the 12-square-metre Sharpie that competed at the 1956 Melbourne Olympics. Australian sailors and designers subsequently developed a lighter version, which became a national one-design class during the 1960s. The class has maintained its characteristic hull form while allowing refinements to construction, sails, spars, and equipment within class restrictions.</p>
+
+  <h4>Key features</h4>
+  <ul class="detail-list">
+    <li>Large three-person dinghy capable of high-speed planing.</li>
+    <li>Powerful mainsail, jib, and spinnaker combination.</li>
+    <li>Designed around coordinated three-person crew work and hiking/trapezing.</li>
+    <li>Hull shape has remained substantially unchanged since the development of the Lightweight Sharpie in the 1960s.</li>
+    <li>Strong Australian class association with fleets and championships across multiple states.</li>
+    <li>Known for competitive racing across a wide range of wind conditions.</li>
+  </ul>
+</section>
+      </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

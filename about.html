@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Blue toolbar for light mode users --><meta name="theme-color" content="#4A90E2" media="(prefers-color-scheme: light)"><!-- Dark grey toolbar for dark mode users --><meta name="theme-color" content="#1A1A1A" media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About SailHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="biographies.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select id="fontSelect" class="control-select">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page single-column">
+      <section class="detail-card">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Our story</p>
+        <h1 data-i18n="aboutTitle">Built for sailors who value clarity and calm.</h1>
+        <p data-i18n="aboutText">SailHub was crafted to bring together daily marine knowledge, practical preparation, and inspiring visuals in one elegant experience.</p>
+        <div class="stat-row">
+          <div>
+            <strong>24/7</strong>
+            <span data-i18n="aboutStat1">Guided planning</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span data-i18n="aboutStat2">Modern design</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span data-i18n="aboutStat3">Featured pages</span>
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 1.5rem;" class="detail-card">
+        <h1 data-i18n="aboutTitle">Version History</h1>
+        <table class="version-table">
+    <thead>
+      <tr >
+        <th>Date</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>22/09/26</td>
+        <td>Release</td>
+        <td>Initial Release- all pages, features and functionality added</td>
+        <td>1.0</td>
+      </tr>
+      <!--<tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr>
+     <tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr>
+      <tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr>
+      <tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr>
+      <tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr>
+      <tr>
+        <td>32/13/100</td>
+        <td>Bugfix</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores quos modi ut vel voluptas inventore sunt autem id, dignissimos nemo fugit obcaecati atque quo, dolor quasi! Laborum, impedit recusandae!</td>
+        <td>75.10</td>
+      </tr> -->
+    </tbody>
+  </table>
+
+      </section>
+    </main>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SailHub Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <!-- <div class="hnav" id="myLinks">
+        <a href="#news">News</a>
+        <a href="#settings">Settings</a>
+        <a href="#other">Other</a>
+      </div>
+      <button class="icon" type="button" aria-controls="myLinks" aria-expanded="false" aria-label="Open menu" onclick="myFunction()">
+        <img src="images/menu_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="" aria-hidden="true">
+      </button> -->
+      <a class="brand" href="index.html"><img style="height: 50px; width: auto;" src="images/SailHub Logo.svg" alt="SailHub"></a>
+      <nav class="nav-links">
+        <a href="biographies.html" data-i18n="navBiographies">Biographies</a>
+        <a href="about.html" data-i18n="navAbout">About</a>
+        <a href="resources.html" data-i18n="navResources">Resources</a>
+        <a href="gallery.html" data-i18n="navGallery">Gallery</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="toolbar">
+        <img id="themeToggle" class="control-btn" type="button" class="toggleDarkmode" title="Toggle Mode" onclick="toggleDarkmode()" src="images/contrast_86dp_000000_FILL0_wght400_GRAD0_opsz48.svg" alt="Theme">
+        <select id="fontSelect" class="control-select">
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="OpenDyslexic, sans-serif">OpenDyslexic</option>
+          <option value="monospace">Monospace</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Tahoma, sans-serif">Tahoma</option>
+          <option value="Impact, sans-serif">Impact</option>
+          <option value="cursive">Cursive</option>
+          <option value="Helvetica, sans-serif">Helvetica</option>
+          <option value="Trebuchet MS, sans-serif">Trebuchet</option>
+        </select>
+        <div class="google-translate-wrap">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page single-column">
+      <section class="detail-card resources-intro">
+        <p class="eyebrow">Sailing resources</p>
+        <h1>Helpful links for learning, gear, and reading.</h1>
+        <p>Curated picks for sailors who want practical guidance, quality gear, and trusted inspiration in one place.</p>
+      </section>
+
+      <section class="resource-section">
+        <div class="resource-heading">
+          <h2>Media</h2>
+          <p>Free lessons and tips from experienced sailors.</p>
+        </div>
+        <div class="resource-carousel-shell">
+          <button class="carousel-nav prev" type="button" aria-label="Scroll left">←</button>
+          <div class="resource-grid" data-carousel>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwv5dSL6ZtEoXz4_K517Q6Gie_QK09Kz4uxw&s" alt="NS14video channel preview" />
+              <h3>NS14video</h3>
+              <p>NS14video provides free training lessons for both on and off the water, with ideas that apply beyond the NS14.</p>
+              <a class="resource-link" target="_blank" href="https://www.youtube.com/@NS14video">
+                <span>Visit channel</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR69saQde8askPZyKbVOvemqly_svbxJu4Ow&s" alt="JoyriderTV channel preview" />
+              <h3>JoyriderTV</h3>
+              <p>JoyriderTV offers free tutorials across a broad range of sailing topics and practical seamanship skills.</p>
+              <a class="resource-link" target="_blank" href="https://www.youtube.com/@JoyriderTV">
+                <span>Visit channel</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+          </div>
+          <button class="carousel-nav next" type="button" aria-label="Scroll right">→</button>
+        </div>
+      </section>
+
+      <section class="resource-section">
+        <div class="resource-heading">
+          <h2>Shopping</h2>
+          <p>Useful equipment and boating parts for sea days and upgrades.</p>
+        </div>
+        <div class="resource-carousel-shell">
+          <button class="carousel-nav prev" type="button" aria-label="Scroll left">←</button>
+          <div class="resource-grid" data-carousel>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://cdn.productreview.com.au/resize/listing-picture/79408da5-a2af-4d3f-91d2-93f3f8f9ca1e?height=600&v=2&width=600" alt="MonkeyFist gear preview" />
+              <h3>MonkeyFist.com.au</h3>
+              <p>MonkeyFist is a go-to destination for sailing and boating gear, parts, and accessories.</p>
+              <a class="resource-link" target="_blank" href="https://www.monkeyfist.com.au/">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+             <article class="info-card resource-card">
+              <img class="resource-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpjOKlcAbi52Hx6NRA4QPlNwlHF831B8dAsAKzqDBKA&s=10" alt="Zhik gear preview" />
+              <h3>Zhik.com</h3>
+              <p>Zhik is an innovative Australian water sports brand that designs high-performance sailing apparel and gear trusted by Olympic and world champion athletes</p>
+              <a class="resource-link" target="_blank" href="https://www.zhik.com/">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+             <article class="info-card resource-card">
+              <img class="resource-image" src="https://cdn.productreview.com.au/resize/listing-picture/7a64dc77-d0dd-3e03-b1d7-92ea27445944?height=630&v=2&width=1200" alt="Whitworths Gear Preview" />
+              <h3>Whitworths Marine & Leisure</h3>
+              <p>Whitworths is a specialist retailer that sells a wide range of boating, marine, and caravan accessories</p>
+              <a class="resource-link" target="_blank" href="https://www.whitworths.com.au/sailing?srsltid=AU7gw4UqVe5PPgS-eyIxjIkmDIwzMK-O03WZMYvw0BE5t0if76aANCVj">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+             <article class="info-card resource-card">
+              <img class="resource-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH54n0mYWvSiYgY1uyc2bRMZuPC3U_00l_-gVRWvvGw&s" alt="Ronstan Gear Preview" />
+              <h3>Ronstan</h3>
+              <p>Melbourne-based manufacturer that designs, produces, and sells high-performance hardware and marine accessories</p>
+              <a class="resource-link" target="_blank" href="https://www.ronstan.com/au/">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+            <!--<article class="info-card resource-card">
+              <img class="resource-image" src="" alt="" />
+              <h3></h3>
+              <p></p>
+              <a class="resource-link" target="_blank" href="">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="" alt="" />
+              <h3></h3>
+              <p></p>
+              <a class="resource-link" target="_blank" href="">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="" alt="" />
+              <h3></h3>
+              <p></p>
+              <a class="resource-link" target="_blank" href="">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="" alt="" />
+              <h3></h3>
+              <p></p>
+              <a class="resource-link" target="_blank" href="">
+                <span>Visit store</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>-->
+          </div>
+          <button class="carousel-nav next" type="button" aria-label="Scroll right">→</button>
+        </div>
+      </section>
+
+      <section class="resource-section">
+        <div class="resource-heading">
+          <h2>Reading</h2>
+          <p>Great reads for sharpening your racing and sailing knowledge.</p>
+        </div>
+        <div class="resource-carousel-shell">
+          <button class="carousel-nav prev" type="button" aria-label="Scroll left">←</button>
+          <div class="resource-grid" data-carousel>
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ2KTkHv8mI3SE4fJcqa6yuDnAaGkIiXIeO5NrL5G4mhyRjuuMjfrvbd_4bxi7Tgb61pMbM0AU54-0k21Um860K0_5zLRieaxNs5V3QKYL1" alt="Sailing to Win book cover" />
+              <h3>Sailing to Win</h3>
+              <p>Brett Bowden shares decades of wisdom for navigating from the back of the fleet to the front, with lessons from sailing legends.</p>
+              <a class="resource-link" target="_blank" href="https://www.amazon.com.au/Sailing-Win-Dinghies-One-Design/dp/1925288366/ref=tmm_pap_swatch_0">
+                <span>View book</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://www.qbd.com.au/img/products/0/9781119867234.jpg" alt="Sailing for Dummies book cover" />
+              <h3>Sailing for Dummies</h3>
+              <p>A comprehensive guide for beginners to learn the fundamentals of sailing.</p>
+              <a class="resource-link" target="_blank" href="https://www.qbd.com.au/sailing-for-dummies-9781119867234">
+                <span>View book</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+
+            <article class="info-card resource-card">
+              <img class="resource-image" src="https://cdn.revolutionise.com.au/gallery/xbbp9fnhqy7gimtz.png" alt="Sailing for Dummies book cover" />
+              <h3>Racing Rules of Sailing</h3>
+              <p>The 2025-2028 version of the Racing Rules of Sailing ‘Blue Book’ with Australian Sailing prescriptions.</p>
+              <a class="resource-link" target="_blank" href="https://www.sailingresources.org.au/rules-hub/rrs">
+                <span>View Site</span>
+                <svg viewBox="0 -960 960 960" aria-hidden="true"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+              </a>
+            </article>
+          </div>
+          <button class="carousel-nav next" type="button" aria-label="Scroll right">→</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>SailHub - A Drew Godschalx Industries Creation</p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.resource-carousel-shell').forEach((shell) => {
+        const carousel = shell.querySelector('[data-carousel]');
+        const prevBtn = shell.querySelector('.carousel-nav.prev');
+        const nextBtn = shell.querySelector('.carousel-nav.next');
+
+        if (!carousel || !prevBtn || !nextBtn) return;
+
+        const updateButtons = () => {
+          const overflowing = carousel.scrollWidth > carousel.clientWidth + 1;
+          shell.classList.toggle('has-overflow', overflowing);
+          prevBtn.disabled = carousel.scrollLeft <= 1;
+          nextBtn.disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1;
+        };
+
+        prevBtn.addEventListener('click', () => {
+          carousel.scrollBy({ left: -carousel.clientWidth * 0.85, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+          carousel.scrollBy({ left: carousel.clientWidth * 0.85, behavior: 'smooth' });
+        });
+
+        carousel.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+      });
+    </script>
+  </body>
+</html>
