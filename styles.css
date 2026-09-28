@@ -951,29 +951,109 @@ h2 {
 
 @media (max-width: 600px) {
   .topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 0.55rem;
     padding: 0.85rem 1rem;
+  }
+
+  .brand {
+    line-height: 1;
+  }
+
+  .brand img {
+    height: 42px !important;
+    max-width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0.55rem;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    font-size: 0.85rem;
   }
 
   .toolbar {
     width: 100%;
-    gap: 0.5rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.4rem;
   }
 
-  .nav-links {
-    width: 100%;
-    gap: 0.5rem 0.85rem;
+  .toolbar .control-btn {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    padding: 0.35rem;
+  }
+
+  .toolbar .control-select {
+    flex: 0 1 100px;
+    width: 100px;
+    min-width: 0;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .google-translate-wrap {
+    flex: 0 1 136px;
+    min-width: 0;
+    max-width: 136px;
+    overflow: hidden;
+  }
+
+  .google-translate-wrap .goog-te-gadget-simple {
+    white-space: nowrap;
   }
 
   .page {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   .hero-card,
   .detail-card,
   .info-card,
   .gallery-card {
-    padding: 1.1rem;
-    border-radius: 16px;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.18em;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .stat-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .stat-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+    padding: 0.7rem 0.55rem;
+    border-radius: 10px;
+    font-size: 0.82rem;
+  }
+
+  .stat-row strong {
+    font-size: 1rem;
   }
 
   .results-grid {
@@ -992,7 +1072,22 @@ h2 {
     overflow-x: auto;
   }
 
+  .version-table th,
+  .version-table td {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.82rem;
+  }
+
   .pagination-container {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 0.65rem;
+    overflow: visible;
   }
 }
