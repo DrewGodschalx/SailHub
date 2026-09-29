@@ -293,7 +293,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .results-grid .boat-detail {
@@ -640,7 +640,6 @@ h2 {
   height: auto;
   width: 100%;
   max-height: 240px;
-  border-radius: 16px;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15));
@@ -674,8 +673,27 @@ h2 {
     gap: 0.8rem;
   }
 
-  .hero-card, .card-grid, .gallery-grid, .stat-row {
+  .hero-card, .card-grid:not(.gallery-grid), .stat-row {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .gallery-grid .gallery-card {
+    padding: 0.65rem;
+    border-radius: 10px;
+  }
+
+  .gallery-card h2 {
+    font-size: 1rem;
+  }
+
+  .gallery-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
   .search-box {
@@ -945,7 +963,19 @@ h2 {
   }
 
   .results-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .resource-card {
+    flex-basis: 220px;
+    min-width: 220px;
+    height: 390px;
+    min-height: 390px;
+  }
+
+  .resource-image {
+    height: 155px;
+    min-height: 155px;
   }
 }
 
@@ -1057,7 +1087,77 @@ h2 {
   }
 
   .results-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+
+  .result-item {
+    height: 100%;
+    min-height: 0;
+    gap: 0.35rem;
+    padding: 0.45rem;
+    border-radius: 10px;
+  }
+
+  .result-item h4 {
+    font-size: clamp(0.65rem, 2.8vw, 0.8rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .result-item img {
+    min-height: 52px;
+    border-radius: 7px;
+  }
+
+  .result-item .created-by {
+    align-items: center;
+    gap: 0.25rem;
+    width: 100%;
+    min-width: 0;
+    margin-top: auto;
+    flex-wrap: wrap;
+    font-size: clamp(0.52rem, 2.2vw, 0.68rem);
+    line-height: 1.2;
+  }
+
+  .result-item .created-by span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .result-item .created-by-logo {
+    width: 18px;
+    height: 18px;
+    min-height: 18px;
+    flex-basis: 18px;
+  }
+
+  .resource-card {
+    flex-basis: min(180px, 42vw);
+    min-width: min(180px, 42vw);
+    height: 350px;
+    min-height: 350px;
+    gap: 0.55rem;
+  }
+
+  .resource-card h3 {
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+  }
+
+  .resource-card p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .resource-image {
+    height: 115px;
+    min-height: 115px;
+    padding: 0.3rem;
+    border-radius: 10px;
   }
 
   .detail-header {
